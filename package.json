@@ -1,0 +1,83 @@
+{
+  "name": "csharp-to-dart-model-generator",
+  "displayName": "C# to Dart Model Generator",
+  "description": "Convert C# DTO / model classes into Dart models (with fromJson and toJson) and paste directly in VS Code.",
+  "version": "1.0.0",
+  "publisher": "csharp-to-dart",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csharp-to-dart/csharp-to-dart-vscode"
+  },
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other",
+    "Formatters"
+  ],
+  "keywords": [
+    "c#",
+    "dart",
+    "flutter",
+    "dto",
+    "model",
+    "converter",
+    "paste"
+  ],
+  "activationEvents": [
+    "onCommand:csharpToDart.pasteAsDart",
+    "onCommand:csharpToDart.convertSelection"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "csharpToDart.pasteAsDart",
+        "title": "Paste C# as Dart",
+        "category": "C# to Dart"
+      },
+      {
+        "command": "csharpToDart.convertSelection",
+        "title": "Convert Selection: C# to Dart",
+        "category": "C# to Dart"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "csharpToDart.pasteAsDart",
+          "when": "editorTextFocus",
+          "group": "9_cutcopypaste@1"
+        },
+        {
+          "command": "csharpToDart.convertSelection",
+          "when": "editorHasSelection",
+          "group": "9_cutcopypaste@2"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "csharpToDart.pasteAsDart",
+        "key": "ctrl+alt+v",
+        "mac": "cmd+alt+v",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run compile && node --test out/test/**/*.test.js",
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.80.0",
+    "@vscode/vsce": "^4.0.0",
+    "typescript": "^5.3.3"
+  }
+}

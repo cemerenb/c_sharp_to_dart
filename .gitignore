@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# JavaScript output
+out/
+
+# VS Code package outputs
+*.vsix
+
+# VS Code test workspace
+.vscode-test/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
