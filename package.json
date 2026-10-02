@@ -3,11 +3,15 @@
   "displayName": "C# to Dart Model Generator",
   "description": "Convert C# DTO / model classes into Dart models (with fromJson and toJson) and paste directly in VS Code.",
   "version": "1.0.0",
-  "publisher": "csharp-to-dart",
+  "publisher": "cemerenb",
   "repository": {
     "type": "git",
-    "url": "https://github.com/csharp-to-dart/csharp-to-dart-vscode"
+    "url": "https://github.com/cemerenb/c_sharp_to_dart.git"
   },
+  "bugs": {
+    "url": "https://github.com/cemerenb/c_sharp_to_dart/issues"
+  },
+  "homepage": "https://github.com/cemerenb/c_sharp_to_dart#readme",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.80.0"

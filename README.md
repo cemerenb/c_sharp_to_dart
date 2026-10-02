@@ -1,6 +1,10 @@
 # C# to Dart Model Generator (Visual Studio Code Extension)
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-c__sharp__to__dart-blue?logo=github)](https://github.com/cemerenb/c_sharp_to_dart)
+
 Bu extension, **Visual Studio Code** içerisinde C# DTO ve model sınıflarını otomatik olarak temiz ve eksiksiz Dart model sınıflarına dönüştürerek doğrudan kod editörünüze yapıştırır (**Paste C# as Dart**).
+
+**GitHub Deposu:** [https://github.com/cemerenb/c_sharp_to_dart](https://github.com/cemerenb/c_sharp_to_dart)
 
 Backend'den (Swagger, C# projesi, web sayfası vb.) kopyaladığınız C# sınıfını VS Code'da tek bir kısayol veya sağ tık ile Dart koduna dönüştürüp yapıştırabilirsiniz.
 
